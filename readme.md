@@ -1,6 +1,6 @@
-# Beacon Lock
+t# Beacon Lock
 
-## Use a bluetooth beacon to lock your Mac when you leave it's proximity
+## Use a bluetooth beacon to lock your Mac when you leave its proximity
 
 Use your Google Bluetooth LE beacon to lock your Mac screen.  Porbably very insecure and crap. I wrote it in about half an hour.
 
