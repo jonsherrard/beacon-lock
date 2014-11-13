@@ -3,6 +3,8 @@
 // Rerun the app.
 var deviceId;
 
+var powerThreshold = -50;
+
 try {
   var config = require('./config.json');
   deviceId = config.deviceId;
@@ -32,7 +34,7 @@ var discoverCallback = function(data) {
     } else if (data.uuid == deviceId) {
       console.log('Device: ', buff, '\n', 'Distance: ', data.rssi, '\n');
     }
-    if ((data.rssi < -50) && (data.uuid == deviceId)) {
+    if ((data.rssi < powerThreshold) && (data.uuid == deviceId)) {
       child = exec('open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app',
         function (error, stdout, stderr) {
           console.log('stdout: ' + stdout);
