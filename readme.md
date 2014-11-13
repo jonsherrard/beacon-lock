@@ -15,3 +15,5 @@ Copy your device Id into config.example.json, and rename it config.json
 Re-run theapp.
 
 When your beacon's distance falls below the threshold (default -50), the Mac screensaver app will be executed.
+
+[Instagram video demo](http://instagram.com/p/vT22OQibkB)
