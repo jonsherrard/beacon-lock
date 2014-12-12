@@ -3,7 +3,7 @@
 // Rerun the app.
 var deviceId;
 
-var powerThreshold = -50;
+var powerThreshold = -90;
 
 try {
   var config = require('./config.json');
